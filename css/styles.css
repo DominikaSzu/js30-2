@@ -1,0 +1,27 @@
+*, body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #dfdce3;
+    position: relative;
+}
+
+.clock-face {
+    width: 45vw;
+    height: 45vh;
+    background-color: #f7b733;
+    border-radius: 50%;
+    position: absolute;
+    margin: 10vh auto;
+    border: 5px solid #f78733;
+}
+
+.hand {
+    border: 3px solid #4abdac;
+    width: 50%;
+    position: absolute;
+}

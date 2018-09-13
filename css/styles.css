@@ -3,25 +3,32 @@
     padding: 0;
 }
 
-.wrapper {
+body {
     width: 100vw;
     height: 100vh;
     background-color: #dfdce3;
-    position: relative;
+    text-align: center;
 }
 
-.clock-face {
-    width: 45vw;
-    height: 45vh;
+.clock {
+    width: 300px;
+    height: 300px;
     background-color: #f7b733;
     border-radius: 50%;
-    position: absolute;
-    margin: 10vh auto;
+    margin: 15vh auto;
     border: 5px solid #f78733;
 }
 
+.clock-face {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
 .hand {
-    border: 3px solid #4abdac;
+    background-color: #4abdac;
     width: 50%;
     position: absolute;
+    height: 6px;
+    top: 50%;
 }

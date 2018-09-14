@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
     
     const secHand = document.querySelector('.hand-second');
     const minHand = document.querySelector('.hand-minute');
+    const hourHand = document.querySelector('.hand-hour');
 
 
     setDate = () => {
@@ -20,6 +21,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
         minHand.style.transform = `rotate(${minutesDegrees}deg)`;
         
 //        Setting hours hand
+        
+        const hours = newDate.getHours();
+        const hoursDegrees = ((hours / 12) * 360) + 90;
+        hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
 
     }
     
